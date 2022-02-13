@@ -1,0 +1,16 @@
+
+a#harsh:hover {
+    /* color: red; */
+    background-color: aqua !important;
+}
+
+
+
+@media (min-width: 768px)
+{
+    .navbar-expand-lg .navbar-toggler {
+    display: none;
+}
+    
+
+}
