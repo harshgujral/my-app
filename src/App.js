@@ -1,9 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as  Router, Switch, Route } from 'react-router-dom';
-import Footer from './Components/layouts/footer/footer';
 import './index.css';
+import Layout from './Components/Layout';
 
-import Header from './Components/layouts/header/header';
 import About from './view/about/About';
 import Home from './view/home/Home';
 
@@ -13,7 +12,7 @@ function App() {
       <>
     
    <Router>
-   <Header />
+  <Layout>
    <Switch>
   <Route exact path = "/">
    <Home />
@@ -23,11 +22,13 @@ function App() {
    <About />
   </Route>
 
-</Switch>
 
+
+</Switch>
+</Layout>
 </Router>
 
-<Footer />
+
 </>
     </div>
   );

@@ -8,7 +8,7 @@ export default function Header(){
         <>
      <Navbar bg="dark" expand="lg">
            <Container>
-<Navbar.Brand href = "/" className="text-light">React To Do List</Navbar.Brand>
+<Navbar.Brand href = "/" className="text-light "> To-Do APP</Navbar.Brand>
 <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-light" />
     <Navbar.Collapse id="basic-navbar-nav">
 
