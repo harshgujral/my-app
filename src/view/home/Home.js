@@ -48,10 +48,7 @@ alert("number")
     //   alert(delItm)
     
 }
-   const edit = (e)=>{
-   alert("value")
-   
-   }
+  
   
 
 
@@ -76,7 +73,7 @@ alert("number")
  {/* <List /> */}
  {
             value.map((presentData , index) =>(
-                <List  key ={index} number = {index} data = {presentData} edit = {edit}  deleteItm = {deleteItm} />
+                <List  key ={index}  data = {presentData}  deleteItm = {deleteItm} />
             ))
  }
     </div>
