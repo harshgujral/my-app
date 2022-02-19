@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as  Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './index.css';
 import Layout from './Components/Layout';
 
@@ -10,26 +10,19 @@ function App() {
   return (
     <div className="App">
       <>
-    
-   <Router>
-  <Layout>
-   <Switch>
-  <Route exact path = "/">
-   <Home />
-  </Route>
-
-  <Route path = "/view/about/About">
-   <About />
-  </Route>
-
-
-
-</Switch>
-</Layout>
-</Router>
-
-
-</>
+        <Router>
+          <Layout>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/view/about/About">
+                <About />
+              </Route>
+            </Switch>
+          </Layout>
+        </Router>
+      </>
     </div>
   );
 }
