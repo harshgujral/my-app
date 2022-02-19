@@ -7,7 +7,7 @@ import './list.css';
 export default function List({ data, index, deleteItm }) {
     const { text } = data;
     const [taskValue, setTaskValue] = useState(text);
-    const [task, setTask] = useState({ disabled: true, textDecoration: "none" })
+    const [task, setTask] = useState({ disabled: true})
     const [line, setLine] = useState({ textDecoration: "none" })
     const edit = () => {
         if (task.disabled == true) {
